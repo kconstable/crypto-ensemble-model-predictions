@@ -52,12 +52,32 @@ The LSTM models were built using Keras/Tensorflow, and the hyper-parameters were
 
 ![image](https://user-images.githubusercontent.com/1649676/143146099-f69b1b40-e2af-45e4-99f8-45a8d7c9d9ad.png)
 
+## Plotly/Dash Application
+A simple interactive dashboad to navigate features and predictions is provided.  The dash files are contained in the dash folder
+![image](https://user-images.githubusercontent.com/1649676/144723252-6db9a74b-0202-4fa1-8e77-c20690fc3449.png)
+
 
 ## File Structure
 The data files in the repository are organized as follows:
-+ sentiment: web-scrapping, google-news, google-trends, sentiment calculation
+B+ sentiment: web-scrapping, google-news, google-trends, sentiment calculation
 + data_aquisition: data collection, analysis, consolidation, 
 + feature_engineering: feature engineering, evaluation, and selection
 + models: data pre-processing, LSTM model training, optimization, ensemble construction, trading-back-tests
-
++ Data: Contains all consolidated data files
+  +  BTC_market_data - all feature data
+  +  BTC_market_data_shifted - all feature data plus shifted featuresd
+  +  BTC_market_data_final - final data file used for training with selected features
+  +  BTC_news - full news articles from forbes with sentiment
+  +  BTC_news_volume- news from all sources from google news
+  +  BTC_news_counts - news from all sources from google news - with calculated metrics and sentiment
+  +  BTC_short_backtest_ytd - backtest of the short LSTM model
+  +  BTC_long_backtest_ytd - backtest of the long LSTM model
+  +  BTC_prophet_backtest_ytd - backtest of the facebook prophet model
++ Models: Trained LSTM models
+  + BTC_short_model_final
+  + BTC_long_model_final
++ Dash: dash application files
+  + main.py - main control flow
+  + layout.py - controls the application layout
+  + functions.py - data and plotting functions
 
