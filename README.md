@@ -65,7 +65,7 @@ B+ sentiment: web-scrapping, google-news, google-trends, sentiment calculation
 + models: data pre-processing, LSTM model training, optimization, ensemble construction, trading-back-tests
 + Data: Contains all consolidated data files
   +  BTC_market_data - all feature data
-  +  BTC_market_data_shifted - all feature data plus shifted featuresd
+  +  BTC_market_data_shifted - all feature data plus shifted features
   +  BTC_market_data_final - final data file used for training with selected features
   +  BTC_news - full news articles from forbes with sentiment
   +  BTC_news_volume- news from all sources from google news
