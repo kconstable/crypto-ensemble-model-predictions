@@ -53,7 +53,7 @@ The LSTM models were built using Keras/Tensorflow, and the hyper-parameters were
 ![image](https://user-images.githubusercontent.com/1649676/143146099-f69b1b40-e2af-45e4-99f8-45a8d7c9d9ad.png)
 
 ## Plotly/Dash Application
-A simple interactive dashboad to navigate features and predictions is provided.  The dash files are contained in the dash folder
+A simple interactive dashboard to navigate features and predictions is provided.  The dash files are contained in the dash folder
 ![image](https://user-images.githubusercontent.com/1649676/144723252-6db9a74b-0202-4fa1-8e77-c20690fc3449.png)
 
 
@@ -73,9 +73,6 @@ B+ sentiment: web-scrapping, google-news, google-trends, sentiment calculation
   +  BTC_short_backtest_ytd - backtest of the short LSTM model
   +  BTC_long_backtest_ytd - backtest of the long LSTM model
   +  BTC_prophet_backtest_ytd - backtest of the facebook prophet model
-+ Models: Trained LSTM models
-  + BTC_short_model_final
-  + BTC_long_model_final
 + Dash: dash application files
   + main.py - main control flow
   + layout.py - controls the application layout
